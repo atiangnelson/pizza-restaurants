@@ -1,0 +1,15 @@
+// Initialize the Database
+
+// Set FLASK_APP environment 
+// export FLASK_APP=server/app.py 
+
+//  Run migration commands
+// flask db init
+// flask db migrate -m "Initial migration"
+// flask db upgrade
+
+//Seed the Database
+//python server/seed.py
+
+//Run the Application
+//flask run

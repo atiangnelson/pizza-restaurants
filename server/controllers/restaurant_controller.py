@@ -4,7 +4,7 @@ from server.models.restaurant import Restaurant
 
 restaurant_bp = Blueprint('restaurants', __name__)
 
-@restaurant_bp.route('', methods=['GET'])
+@restaurant_bp.route('/', methods=['GET'])
 def get_restaurants():
     restaurants = Restaurant.query.all()
     results = []

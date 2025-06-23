@@ -6,7 +6,7 @@ from server.models.pizza import Pizza
 
 restaurant_pizza_bp = Blueprint('restaurant_pizzas', __name__)
 
-@restaurant_pizza_bp.route('', methods=['POST'])
+@restaurant_pizza_bp.route('/', methods=['POST'])
 def create_restaurant_pizza():
     data = request.get_json()
     price = data.get('price')

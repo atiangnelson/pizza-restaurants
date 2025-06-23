@@ -1,8 +1,9 @@
-from server.models import db
-from server.app import app
+from server.app import create_app, db
 from server.models.restaurant import Restaurant
 from server.models.pizza import Pizza
 from server.models.restaurant_pizza import RestaurantPizza
+
+app = create_app() 
 
 with app.app_context():
     db.drop_all()

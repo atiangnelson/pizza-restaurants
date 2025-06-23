@@ -3,7 +3,7 @@ from server.models.pizza import Pizza
 
 pizza_bp = Blueprint('pizzas', __name__)
 
-@pizza_bp.route('', methods=['GET'])
+@pizza_bp.route('/', methods=['GET'])
 def get_pizzas():
     pizzas = Pizza.query.all()
     results = []
